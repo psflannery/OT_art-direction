@@ -18,7 +18,7 @@ add_filter( 'reading_title_before', 'opening_times_sinb_reading_title_markup_bef
 function opening_times_sinb_reading_title_markup_before( $before ) {
 	global $post;
 
-	if ( $post->post_name === 'summer-2017' ) {
+	if ( $post->post_name === 'winter-2017' ) {
 		//$src = '\'http://otdac.org/main/wp-content/uploads/2017/05/Leahs-Vid-Of-Celine-Dancing-web.mp4\'';
 		$src = '\'http://otdac.org/main/wp-content/uploads/2017/11/sinb-intro-small.mp4\'';
 		$template = '\'<div class="popover popover--large" role="tooltip" style="width: 400px;"><div class="popover-content"></div></div>\'';
