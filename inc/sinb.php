@@ -19,10 +19,11 @@ function opening_times_sinb_reading_title_markup_before( $before ) {
 	global $post;
 
 	if ( $post->post_name === 'summer-2017' ) {
-		$src = '\'http://otdac.org/main/wp-content/uploads/2017/05/Leahs-Vid-Of-Celine-Dancing-web.mp4\'';
+		//$src = '\'http://otdac.org/main/wp-content/uploads/2017/05/Leahs-Vid-Of-Celine-Dancing-web.mp4\'';
+		$src = '\'http://otdac.org/main/wp-content/uploads/2017/11/sinb-intro-small.mp4\'';
 		$template = '\'<div class="popover popover--large" role="tooltip" style="width: 400px;"><div class="popover-content"></div></div>\'';
 
-	    $before_title = '<span class="issue-title__sub" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-template=' . $template . ' data-content="<div class=\'popover__media-container\'><video preload=\'meta\' src=' . $src . ' loop autoplay muted></video></div>">';
+	    $before_title = '<span class="issue-title__sub" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-template=' . $template . ' data-content="<div class=\'popover__media-container\'><video preload=\'meta\' src=' . $src . ' loop autoplay></video></div>">';
 	    
 	    return $before_title;
 	} else {
